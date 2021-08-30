@@ -58,7 +58,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>🎶 Travel Melody</h1>
-      <p>Checkout some of my favoite songs, According to your mood.</p>
+      <p>Checkout some of my favoite songs from three differnt languages.</p>
       <div className="genreList"></div>
     </div>
   );
