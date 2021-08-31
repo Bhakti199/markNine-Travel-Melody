@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./styles.css";
 
 var musicDictionary = {
@@ -53,13 +54,49 @@ var musicDictionary = {
     }
   ]
 };
-
 export default function App() {
+  var [outputMusic, setOutputMusic] = useState("English");
+
+  function musicClickHandler(song) {
+    setOutputMusic(song);
+  }
+
   return (
     <div className="App">
-      <h1>🎶 Travel Melody</h1>
+      <h1>
+        <span role="img" aria-labelledby="musicNotes">
+          🎶
+        </span>
+        Travel Melody{" "}
+      </h1>
       <p>Checkout some of my favoite songs from three differnt languages.</p>
-      <div className="genreList"></div>
+
+      <div className="genreList">
+        {Object.keys(musicDictionary).map((music) => {
+          return (
+            <button
+              className="btnClick"
+              onClick={() => musicClickHandler(music)}
+              style={{ alignself: "left", cursor: "pointer" }}
+            >
+              {" "}
+              {music}
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="seeMusicList">
+        {musicDictionary[outputMusic].map((music) => {
+          return (
+            <ul className="display-list" key={music}>
+              <li> {music.Song} </li>
+              <li> {music.Singer} </li>
+              <li> {music.Ratings} </li>
+            </ul>
+          );
+        })}
+      </div>
     </div>
   );
 }

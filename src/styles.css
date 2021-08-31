@@ -1,11 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
 :root {
-  --primary-color: #d1d5db;
+  --primary-color: #d1fae5;
+  --green-color: #059669;
 }
 .App {
   font-family: "Noto Serif", serif;
-  text-align: center;
+  margin: auto;
+  max-width: 700px;
 }
 body {
   background-color: var(--primary-color);
+}
+
+.btnClick {
+  cursor: "pointer";
+  margin: 0.1rem;
+  padding: 0.5rem;
+  background-color: var(--green-color);
+  border-radius: 0.4rem;
+}
+.display-list {
+  text-align: left;
+  list-style-type: none;
+  display: block;
+  width: 70%;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 0.2rem;
+  margin: "1rem 0.3rem";
+  font-size: 18px;
 }
