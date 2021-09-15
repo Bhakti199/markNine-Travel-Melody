@@ -69,7 +69,7 @@ export default function App() {
         </span>
         Travel Melody{" "}
       </h1>
-      <p>Checkout some of my favoite songs from three differnt languages.</p>
+      <p>Checkout some of my favoite songs from three different languages.</p>
 
       <div className="genreList">
         {Object.keys(musicDictionary).map((music) => {
