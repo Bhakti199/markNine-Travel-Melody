@@ -5,51 +5,60 @@ var musicDictionary = {
   English: [
     {
       Song: "Levitating",
-      Singer: "Dua Lipa",
+      Singer:
+        "Dua Lipa is Singer of these song. This song is about having fun and meeting someone and falling in love.",
       Ratings: "4.5/5"
     },
     {
       Song: "Find you",
-      Singer: "Nick Jonas",
+      Singer:
+        "Nick Jonas is singer of this song. Jonas is seen wandering the desert and it opened up all kinds of questions about who “Find You” is all about.",
       Ratings: "4.5/5"
     },
     {
       Song: "Jalebi baby",
-      Singer: "Teshar",
+      Singer:
+        "Teshar is singer of this song. The song title refers to a well-known South Asian and Middle Eastern sweet known as jalebi.",
       Ratings: "4.5/5"
     }
   ],
   Hindi: [
     {
       Song: "Iktara",
-      Singer: "Amit Trivedi",
+      Singer:
+        "This song is by Amit Trivedi. This song is about,'Oh my heart you're crazy, Only you know what you think of'.",
       Ratings: "4/5"
     },
     {
       Song: "Ghungroo",
-      Singer: "Arjit Singh",
+      Singer:
+        "This singer is Arjit Singh. This is a party song with lovable music beats.",
       Ratings: "4.5/5"
     },
     {
       Song: "Manjha",
-      Singer: "Vishal Mishra",
+      Singer:
+        "Beautiful romantic song sung by Vishal Mishra. This song is about expressing feelings through lovable beats lyrics.",
       Ratings: "3.5/5"
     }
   ],
   Marathi: [
     {
       Song: "Tula japnar ahe",
-      Singer: "Adarsh Shinde",
+      Singer:
+        "Adarsh Shinde is singer of this song. This song express the relation between brother and sister. ",
       Ratings: "5/5"
     },
     {
       Song: "Zingaat",
-      Singer: "Ajay Gogavale",
+      Singer:
+        "Ajay Gogavale is singer of this song. This a party song, which has a most energetic music.",
       Ratings: "4.5/5"
     },
     {
       Song: "Roj roj navyane",
-      Singer: "Sonu Nigam",
+      Singer:
+        "Sonu Nigam is singer of this song. This is a romantic song express the feeling of love. ",
       Ratings: "5/5"
     }
   ]
@@ -90,9 +99,9 @@ export default function App() {
         {musicDictionary[outputMusic].map((music) => {
           return (
             <ul className="display-list" key={music}>
-              <li> {music.Song} </li>
+              <li style={{ fontWeight: "bold" }}> {music.Song} </li>
               <li> {music.Singer} </li>
-              <li> {music.Ratings} </li>
+              <li style={{ fontWeight: "bold" }}> {music.Ratings} </li>
             </ul>
           );
         })}
