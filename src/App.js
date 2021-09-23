@@ -32,7 +32,7 @@ var musicDictionary = {
     {
       Song: "Ghungroo",
       Singer:
-        "This singer is Arjit Singh. This is a party song with lovable music beats.",
+        "The singer is Arjit Singh. This is a party song with lovable music beats.",
       Ratings: "4.5/5"
     },
     {
